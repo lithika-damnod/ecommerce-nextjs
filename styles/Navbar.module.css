@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.nav { 
+    display: flex; 
+    height: 100px; 
+    width: 100vw; 
+    background-color: rgba(156, 150, 249, 0.31); 
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1rem; 
+    position: relative; 
+    margin: 0; 
+    grid-column: 1/-1;
+    grid-row: 1/2; 
+}
+.logo { 
+    display: flex; 
+    color: #464343; 
+    font-size: 2.5em;
+    font-family: 'Cinzel Decorative', cursive;
+    align-items: center;
+    cursor: pointer; 
+    
+    /* disable selecting */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.options { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    /* disable selecting */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.bag {
+    display: flex; 
+    align-items: center;
+    padding: 5px; 
+    cursor: pointer; 
+}
+.signinBtn { 
+    display: flex; 
+    align-items: center;
+    margin-left: 1.2em; 
+    cursor: pointer; 
+}
+.largeMenu { 
+    display: none; 
+    width: 40%; 
+    height: 100vh; 
+    background-color: rgba(156, 150, 249, 0.891); 
+    background-image: linear-gradient(to top, #aaa4fca1 0%, #c2bff6 100%);
+    position: fixed; 
+    z-index: 100; 
+    opacity: 0; 
+    top: 0;
+    right: 0;
+    transform: none !important; 
+}
+.hamburger { 
+    display: flex; 
+    align-items: center;
+    margin-left: 3em; 
+    padding: 10px; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 10; 
+}
+.close { 
+    position: absolute; 
+    z-index: 20;
+    opacity: 0; 
+    right: 0; 
+    padding: 1rem; 
+}
+
+/* media-queries */ 
+@media only screen and (max-width: 860px) {
+    .signinBtn { 
+        display: none; 
+    }
+    .hamburger { 
+        margin-left: 1.8em; 
+    }
+    .largeMenu { 
+        width: 55%; 
+    }
+}
+@media only screen and (max-width: 650px) {
+    .signinBtn { 
+        display: none; 
+    }
+    .bag {
+        display: none;
+    }
+    .hamburger { 
+        margin-left: 1.8em; 
+    }
+    .largeMenu { 
+        width: 70%; 
+    }
+}
+@media only screen and (max-width: 560px) {
+    .signinBtn { 
+        display: none; 
+    }
+    .bag {
+        display: none;
+    }
+    .hamburger { 
+        margin-left: 1.8em; 
+    }
+    .logo {    
+        font-size: 2em;
+    }
+    .largeMenu { 
+        width: 100%; 
+    }
+}
+@media only screen and (max-width: 440px) {
+    .signinBtn { 
+        display: none; 
+    }
+    .bag {
+        display: none;
+    }
+    .hamburger { 
+        margin-left: 1.8em; 
+    }
+    .logo {    
+        font-size: 1.8em;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .signinBtn { 
+        display: none; 
+    }
+    .bag {
+        display: none;
+    }
+    .hamburger { 
+        margin-left: 1.8em; 
+    }
+    .logo {    
+        font-size: 1.6em;
+    }
+}
