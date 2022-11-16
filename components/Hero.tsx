@@ -15,7 +15,8 @@ function Hero() {
                 </motion.h1>
                 <motion.p className={styles.heroP}
                     initial={{ opacity: 0, }} 
-                    animate={{ opacity: 1, transition: { duration: 1.7, delay: 1.9 } }}  >
+                    animate={{ opacity: 1, transition: { duration: 1.7, delay: 1.9 } }}  
+                >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit
                 </motion.p>
                 <div className={styles.startButtons}>
