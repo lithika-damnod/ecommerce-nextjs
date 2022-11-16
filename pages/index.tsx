@@ -5,8 +5,9 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import Slider from "../components/Slider"; 
-import TrendingProduct from '../components/TrendingProduct';
 import Footer from "../components/Footer"; 
+import dynamic from 'next/dynamic';
+const TrendingProduct = dynamic(() => import('../components/TrendingProduct'), { ssr: false });
 
 export default function Home() {
   return (
