@@ -6,7 +6,8 @@ import ClearRoundedIcon from '@mui/icons-material/ClearRounded';
 import Button from "./Button";
 import {motion} from "framer-motion"; 
 import {gsap} from "gsap"; 
-import React, {useRef, useState, useLayoutEffect, Component} from "react"; 
+import React, {useRef, useState, Component} from "react"; 
+import useLayoutEffect from "../utils/isormophic-layout"; 
 
 function Navbar() {
     // refs 

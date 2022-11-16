@@ -120,10 +120,18 @@
     .heroImageWrapper {
         display: none; 
     } 
+    .heroContainer { 
+        position: relative; 
+    }
     .mobileImageWrapper { 
         display: flex; 
+        width: 100vw;  
+        height: 340px; 
+        z-index: 20; 
+        position: absolute; 
+        left: 0; 
     }
     .heroContainer { 
-        z-index: 0; 
+        z-index: 10;
     }
 }; 

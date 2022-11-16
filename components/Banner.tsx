@@ -1,7 +1,7 @@
 import { animationControls, motion, useAnimation }  from "framer-motion"; 
 import styles from "../styles/Banner.module.css"; 
 import { useInView  } from "react-intersection-observer";
-import { useEffect } from "react"; 
+import useEffect from "../utils/isormophic-layout"; 
 
 function Banner() { 
     const {ref, inView} = useInView({

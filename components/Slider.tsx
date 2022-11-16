@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"; 
-import { useLayoutEffect, useRef } from "react";
+import { useRef } from "react";
+import useLayoutEffect from "../utils/isormophic-layout"; 
 import { gsap } from "gsap"; 
 import styles from "../styles/Slider.module.css"; 
 

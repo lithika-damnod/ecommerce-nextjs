@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from "react"; 
+import useEffect from "../utils/isormophic-layout"; 
 import styles from "../styles/TrendingProduct.module.css"; 
 
 // custom components
