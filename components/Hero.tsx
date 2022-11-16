@@ -10,10 +10,20 @@ function Hero() {
                 <motion.h1 className={styles.heroH1 }
                     initial={{ opacity: 0, }} 
                     animate={{ opacity: 1, transition: { duration: 2, delay: 1.5 } }}  
+                    style={{
+                        fontFamily: "'Noto Sans', sans-serif",
+                        fontWeight: 900,
+                        marginBottom: "0", 
+                    }}
                 >
                     Lorem ipsum dolor sit amet consectetur
                 </motion.h1>
                 <motion.p className={styles.heroP}
+                    style={{
+                        fontFamily: "'Noto Sans', sans-serif",
+                        fontWeight: 300,
+                        marginBottom: "1.2rem", 
+                    }}
                     initial={{ opacity: 0, }} 
                     animate={{ opacity: 1, transition: { duration: 1.7, delay: 1.9 } }}  
                 >
